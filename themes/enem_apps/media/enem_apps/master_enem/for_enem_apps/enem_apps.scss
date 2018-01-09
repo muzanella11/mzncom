@@ -1,0 +1,72 @@
+/** For Enem Apps Global **/
+.#{$enem_prefix} {
+    &.no-padding {
+        padding: 0;
+    }
+    &.no-margin {
+        margin: 0;
+    }
+    &.time-wrapper {
+        text-align: center;
+        font-size: 4em;
+        padding: 20px 15px;
+    }
+    &.goyang {
+        @include create_animation_no_infinite(goyang, 1s);
+    }
+    &.block-error {
+        position: relative;
+        display: block;
+        width: 100%;
+        color: red;
+    }
+    &.btn-blue {
+        background: $blue_btn;
+        color: white;
+    }
+    &.wrapper-add-user {
+        @include create_content_middle;
+        & .btn-add-user {
+            width: 280px;
+        }
+    }
+    
+    
+}
+/*********************/
+
+/** For Custom Enem **/
+.#{$enem_prefix} {
+    /** For Home **/
+    &.home {
+        &.block-error {
+            padding: 10px 0;
+        }
+        &.input-signin {
+            margin-bottom: 0;
+        }
+    }
+    /******************/
+    
+    /** Wrapper Loading **/
+    &.wrapper-loading {
+
+    }
+    /************************/
+    
+    /** For Modal **/
+    &.modal-dynamic {
+//        display: none;
+    }
+    &.loading-modal {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        @include create_content_middle;
+        font-size: 5em;
+        color: white;
+//        display: none;
+    }
+    /***********************/
+}
+/************************/

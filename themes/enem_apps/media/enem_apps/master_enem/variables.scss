@@ -1,0 +1,125 @@
+/************* Enem Project Name **************/
+//$enem_project_name:             enem !default;
+/**********************************************/
+
+/*************** Enem Bower Path **************/
+$enem_bower_path: '../bower_components/';
+/**********************************************/
+
+/********* Fancybox Path Image Support ***********/
+$enem_fancybox_path_image:      '../bower_components/fancybox/source' !default;
+/**************************************************/
+
+/*************** Enem Flex Box ****************/
+$enem_flex_ul: false !default;
+$enem_flex_center: false !default;
+/*************************************************/
+
+/************** Enem Prefix **************/
+//$enem_prefix:                   enem_#{$enem_project_name}_ !default;
+$enem_prefix:                   enem !default;
+/*********************************************/
+
+/********** For Media Queries *********/
+/** For Extra Small Screen / Phone **/
+$enem_screen_xs:            480px !default;
+$enem_screen_xs_min:        $enem_screen_xs !default;
+$enem_screen_phone:         $enem_screen_xs_min !default;
+
+/** For Small Screen / Tablet **/
+$enem_screen_sm:            768px !default;
+$enem_screen_sm_min:        $enem_screen_sm !default;
+$enem_screen_tablet:        $enem_screen_sm_min !default;
+
+/** For Medium Screen / Desktop **/
+$enem_screen_md:            992px !default;
+$enem_screen_md_min:        $enem_screen_md !default;
+$enem_screen_medium:        $enem_screen_md_min !default;
+
+/** For Large Screen / Wide Desktop **/
+$enem_screen_lg:            1200px !default;
+$enem_screen_lg_min:        $enem_screen_lg !default;
+$enem_screen_large:         $enem_screen_lg_min !default;
+
+/** For Screen Max **/
+$enem_screen_xs_max:              ($enem_screen_sm_min - 1) !default;
+$enem_screen_sm_max:              ($enem_screen_md_min - 1) !default;
+$enem_screen_md_max:              ($enem_screen_lg_min - 1) !default;
+/**************************************/
+
+/************** Theme Color **************/
+
+
+/*********************************************/
+
+
+/************** COLOR and FONT ************/
+$main_blue:                         #365D98;
+$white:                             white;
+$red:                               #EF5350;
+$green:                             #26A69A;
+$blue:                              #42A5F5;
+$green_icon_box:                    #1BBC9B;
+$red_icon_box:                      #F3565D;
+$blue_icon_box:                     #89C4F4;
+$grey_icon_box:                     #C6C6C6;
+$gold_icon_box:                     #DEB743;
+$green_soft_icon_box:               #47B6AE;
+$purple_icon_box:                   #BD0DBD;
+$blue_btn:                          #57c8f2;
+
+$panel_color:                       #F9F9F9;
+$panel_border_color:                #D9D9D9;
+$font_color_header:                 #9AAECC;
+$font_header:                       1.5em;
+$menu_active_or_hover_background:   rgba(66, 165, 245, 0.1);
+$menu_active_or_hover_font_color:   rgb(66, 165, 245);
+/*********************************/
+
+/************** Radius ***********/
+$radius_all:3px;
+$radius_top:3px 0px;
+$radius_bottom: 0px 3px;
+$radius_none:0px;
+/*********************************/
+
+/************** FLOAT ************/
+$float_left:left;
+$float_right:right;
+/*********************************/
+
+/************** MARGIN or PADDING ***********/
+$margin_or_padding_none: 0px;
+$padding_for_grid:0 20px;
+/*********************************/
+
+/************* BOX SHADOW ***************/
+$shadow_color:rgba(0,0,0,0.5);
+$shadow:2px 2px 5px;
+/*****************************************/
+
+/************* FOR ARROW *****************/
+$border_arrow: 15px;
+$color_arrow:$panel_color;
+/*****************************************/
+
+/********** FOR PREFIX BROWSER ***********/
+$webkit: -webkit-;
+$moz: -moz-;
+$ms: -ms-;
+/*****************************************/
+
+/******** This for Enem Burger ********/
+/** Enem Burger Component Default **/
+$enem_burger_add_vendor_prefixes: true !default;
+$enem_burger_width:         20px !default;
+//$enem_burger_height:        2px !default;
+$enem_burger_height:        3px !default;
+//$enem_burger_gap:           3px !default;
+$enem_burger_gap:           5px !default;
+//$enem_burger_color:         #000 !default;
+$enem_burger_color:         #fff !default;
+$enem_border_radius:        0 !default;
+$enem_transition_duration:  .3s !default;
+$enem_component_burger:     ($enem_burger_width, $enem_burger_height, $enem_burger_gap, $enem_burger_color, $enem_border_radius, $enem_transition_duration);
+/**************************************/

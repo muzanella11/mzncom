@@ -1,0 +1,430 @@
+@mixin border_radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box_shadow($shadow, $shadow_color){
+	 -webkit-box-shadow: $shadow $shadow_color;
+		-moz-box-shadow: $shadow $shadow_color;
+		 -ms-box-shadow: $shadow $shadow_color;
+		  	 box-shadow: $shadow $shadow_color;
+}
+
+@mixin transform($transform){
+	 -webkit-transform: $transform;
+		-moz-transform: $transform;
+		 -ms-transform: $transform;
+		  	 transform: $transform;
+}
+
+@mixin transition($transition){
+	 -webkit-transition: $transition;
+		-moz-transition: $transition;
+		 -ms-transition: $transition;
+		  	 transition: $transition;
+}
+
+@mixin create_animation($name_animation,$duration){
+    -webkit-animation:$name_animation $duration infinite;
+    -moz-animation:$name_animation $duration infinite;
+    animation:$name_animation $duration infinite;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@mixin create_animation_with_option($name_animation,$duration_and_option){
+    -webkit-animation:$name_animation $duration_and_option;
+    -moz-animation:$name_animation $duration_and_option;
+    animation:$name_animation $duration_and_option;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@mixin create_animation_no_infinite($name_animation,$duration){
+    -webkit-animation:$name_animation $duration;
+    -moz-animation:$name_animation $duration;
+    animation:$name_animation $duration;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@mixin create_gradien_with_direction($direction,$color1,$color2){
+    background: -webkit-linear-gradient($direction, $color1, $color2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($direction, $color1, $color2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($direction, $color1, $color2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to $direction, $color1, $color2); /* Standard syntax */
+}
+
+@mixin create_enem_background_cover{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+//@mixin create_enem_placeholder_color($class, $color){
+//    $class::-webkit-input-placeholder {
+//       color: red;
+//    }
+//
+//    :-moz-placeholder { /* Firefox 18- */
+//       color: red;  
+//    }
+//
+//    ::-moz-placeholder {  /* Firefox 19+ */
+//       color: red;  
+//    }
+//
+//    :-ms-input-placeholder {  
+//       color: red;  
+//    }
+//}
+
+@mixin create_enem_container($width_container,$padding_container){
+    position: relative;
+    width: $width_container;
+    padding: $padding_container;
+}
+
+@mixin create_enem_menu_fixed{
+    position: fixed;
+    width: 100%;
+    min-height: 50px;
+    top: 0;
+}
+
+@mixin w100_relative(){
+	position:relative;
+	width:100%;
+}
+
+@mixin wh100_relative(){
+	position:relative;
+	width:100%;
+	height:100%;
+}
+
+@mixin menu_side(){
+	padding: 15px 20px;
+    font-size: 17px;
+    position: relative;
+    @include transition(all 200ms ease-in-out);
+    color:rgba(0,0,0,0.5);
+}
+
+@mixin menu_side_active_hover($background,$color){
+	background: $background;
+    border-left: 3px solid $color; 
+    color: $color !important;
+}
+
+@mixin float($float){
+	float: $float;
+}
+
+@mixin margin($margin){
+	margin: $margin;
+}
+
+@mixin padding($padding){
+	padding: $padding;
+}
+
+@mixin create_container_panel(){
+	width:100%;
+	height:450px;
+	/*min-height:450px;*/
+	position:relative;
+	margin-bottom:2%;
+}
+
+@mixin create_panel($background,$border_color,$radius){
+	position:relative;
+	height:100%;
+	background:$background;
+	border:1px solid $border_color;
+	@include border_radius($radius);
+}
+@mixin create_wrapper_content_panel{
+	position:relative; width:100%; padding:15px;
+}
+@mixin create_box_header_panel{
+	position:relative; width:100%; display:inline-flex; padding:8px 0; border-bottom:1px solid rgba(0,0,0,0.1);
+}
+@mixin create_box_header_title_left_panel($font_color){
+	position:relative; width:50%; font-size:1.5em; text-transform:uppercase; font-weight:bold; color:$font_color;
+}
+@mixin create_box_header_title_right_panel{
+	position:relative; width:50%; text-align:right; font-size:1.2em;
+}
+@mixin create_box_content_panel{
+	position:relative; width:100%; height:325px; padding:8px 0; overflow-y:auto;
+}
+@mixin create_box_content_schedule_panel{
+	position:relative; width:100%; display:inline-flex;
+}
+@mixin create_box_content_list_panel{
+	position:relative; width:100%; display:inline-flex;
+}
+@mixin create_box_content_left_list_panel{
+	position:relative; width:50%; color:black; font-size:17px;
+}
+@mixin create_box_content_right_list_panel{
+	position:relative; width:50%; text-align:right; font-size:15px; color:#9AAECC;
+}
+
+@mixin create_container_data_list_panel{
+	width:100%; min-height:450px; position:relative; background:#F9F9F9; margin-bottom:2%; border:1px solid #D9D9D9;
+}
+
+@mixin create_enem_icon_box($background){
+	background:$background; border-radius:3px; padding:3px 5px; text-align:center; width:40px; height:40px; font-size:2em; color:white;
+}
+
+@mixin create_enem_box_left_panel_data{
+	position:relative; width:70%; display:inline-flex;
+}
+
+@mixin create_enem_box_right_panel_data{
+	position:relative; width:30%; padding:7px; color:rgba(0,0,0,0.5); font-weight:bold; font-size:13px; text-align:right;
+}
+
+@mixin create_box_avatar{
+	position:relative; margin:auto; background-position:center; width:125px; height:125px; border-radius:50%;
+}
+
+@mixin create_arrow_up($border,$color){
+	width: 0; 
+	height: 0; 
+	border-left: $border solid transparent;
+	border-right: $border solid transparent;
+	
+	border-bottom: $border solid $color;
+}
+
+@mixin create_arrow_down($border,$color){
+	width: 0; 
+	height: 0; 
+	border-left: $border solid transparent;
+	border-right: $border solid transparent;
+	
+	border-top: $border solid $color;
+}
+
+@mixin create_arrow_right($border,$color){
+	width: 0; 
+	height: 0; 
+	border-top: $border solid transparent;
+	border-bottom: $border solid transparent;
+	
+	border-left: $border solid $color;
+}
+
+@mixin create_arrow_left($border,$color){
+	width: 0; 
+	height: 0; 
+	border-top: $border solid transparent;
+	border-bottom: $border solid transparent; 
+	
+	border-right:$border solid $color; 
+}
+
+@mixin create_enem_separator($height_separator){
+    @include w100_relative;
+    height: $height_separator;
+}
+
+@mixin create_enem_grid_12{
+    float: left;
+    width: 8.33333%;
+    position: relative;
+    min-height: 11px;
+}
+
+@mixin create_padding_for_grid{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@mixin create_enem_row{
+    @include w100_relative;
+    margin: 0 20px;
+}
+
+@mixin create_enem_jumbotron{
+    @include w100_relative;
+}
+
+/** This For Enem Flexbox **/
+@mixin create_enem_flexbox_wrapper($enem_flex_center, $enem_flex_ul){
+    display: #{$webkit}flex;
+    display: #{$moz}flex;
+    display: #{$ms}flex;
+    display: flex;
+    
+    #{$webkit}flex-flow: row wrap;
+    #{$moz}flex-flow: row wrap;
+    #{$ms}flex-flow: row wrap;
+    flex-flow: row wrap;
+    
+    @if($enem_flex_center) {
+        #{$webkit}justify-content: center;
+        #{$moz}justify-content: center;
+        #{$ms}justify-content: center;
+        justify-content: center;
+    }
+    @if($enem_flex_ul) {
+        list-style: none;
+        margin: 0;
+    }
+}
+@mixin create_enem_target_flexbox(){
+    display: block;
+    #{$webkit}box-flex: 1;
+    #{$webkit}flex: 1;
+    #{$moz}flex: 1;
+    #{$ms}flex: 1;
+    flex: 1;
+}
+/****************************************/
+/*************** This For Clearfix ****************/
+@mixin create_clearfix(){
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+/**************************************************/
+
+/********* This For Create Content Middle *********/
+@mixin create_content_middle() {
+    display: #{$webkit}flex;
+    display: #{$moz}flex;
+    display: #{$ms}flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**************************************************/
+
+/********** This For Create User Select ***********/
+/** Biar teks ga bisa di copy **/
+@mixin create_user_select() {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+/**************************************************/
+
+/********** This For Create Burger Icon ***********/
+// Burger parts
+//
+// (---) top    -> &::before
+// [---] middle -> &
+// (---) bottom -> &::after
+
+/************ Create Enem Burger ******************/
+@mixin create_enem_burger($width_burger, $height_burger, $gap_burger, $color_burger, $radius_burger, $transition_duration_burger) {
+    position: relative;
+    margin-top: $height_burger + $gap_burger;
+    margin-bottom: $height_burger + $gap_burger;
+    
+    @include create_user_select;
+    
+    &, &::before, &::after {
+        display: block;
+        width: $width_burger;
+        height: $height_burger;
+        background: $color_burger;
+        
+        @if $radius_burger != 0 {
+            @include border_radius($radius_burger);
+        }
+        
+        -webkit-transition-property: background-color, -webkit-transform;
+           -moz-transition-property: background-color, -moz-transform;
+             -o-transition-property: background-color, -o-transform;
+                transition-property: background-color, transform;
+        
+        -webkit-transition-duration: $transition_duration_burger;
+           -moz-transition-duration: $transition_duration_burger;
+             -o-transition-duration: $transition_duration_burger;
+                transition-duration: $transition_duration_burger;
+    }
+    
+    &::before, &::after {
+        position: absolute;
+        content: "";
+    }
+
+    &::before {
+        top: -($height_burger + $gap_burger);
+    }
+
+    &::after {
+        top: $height_burger + $gap_burger;
+    }
+
+}
+
+/** Parts of Enem Burger **/
+@mixin create_enem_burger_parts {
+    &, &::before, &::after {
+        @content;
+    }
+}
+
+@mixin create_enem_burger_top {
+    &::before {
+        @content;
+    }
+}
+
+@mixin create_enem_burger_middle {
+    & {
+        @content;
+    }
+}
+
+@mixin create_enem_burger_bottom {
+    &::after {
+        @content;
+    }
+}
+/********************************/
+// Animate burger cross
+@mixin enem_burger_to_cross($enem_burger_color) {
+    & {
+        background-color: transparent;
+    }
+    @if ($enem_burger_color) {
+        &::before, &::after {
+            background-color: $enem_burger_color;
+        }
+    }
+    &::before {
+        -webkit-transform: translateY($enem_burger_gap + $enem_burger_height) rotate(45deg);
+        -moz-transform: translateY($enem_burger_gap + $enem_burger_height) rotate(45deg);
+        -ms-transform: translateY($enem_burger_gap + $enem_burger_height) rotate(45deg);
+        -o-transform: translateY($enem_burger_gap + $enem_burger_height) rotate(45deg);
+        transform: translateY($enem_burger_gap + $enem_burger_height) rotate(45deg);
+    }
+    &::after {
+        -webkit-transform: translateY(-($enem_burger_gap + $enem_burger_height)) rotate(-45deg);
+        -moz-transform: translateY(-($enem_burger_gap + $enem_burger_height)) rotate(-45deg);
+        -ms-transform: translateY(-($enem_burger_gap + $enem_burger_height)) rotate(-45deg);
+        -o-transform: translateY(-($enem_burger_gap + $enem_burger_height)) rotate(-45deg);
+        transform: translateY(-($enem_burger_gap + $enem_burger_height)) rotate(-45deg);
+    }
+}
+/**************************************************/

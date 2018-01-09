@@ -1,0 +1,359 @@
+/*************** FOR ANIMATE MUTER *******************/
+@-moz-keyframes muter { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes muter { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes muter { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); -moz-transform: rotate(360deg); } }
+
+@-moz-keyframes muter_terbalik { 100% { -moz-transform: rotate(180deg); } }
+@-webkit-keyframes muter_terbalik { 100% { -webkit-transform: rotate(180deg); } }
+@keyframes muter_terbalik { 100% { -webkit-transform: rotate(180deg); transform:rotate(180deg); -moz-transform: rotate(180deg); } }
+
+@-moz-keyframes muter_terbalik_baliklagi {
+    0% {
+        -moz-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+    100% {
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+}
+
+@-webkit-keyframes muter_terbalik_baliklagi {
+    0% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+}
+
+@keyframes muter_terbalik_baliklagi {
+    0% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+}
+/***********************************************/
+
+/********************************* FOR ANIMATE RUNNING TEXT ***********************/
+@-moz-keyframes enem_running_text {
+     0%   { -moz-transform: translateX(100%); }
+     100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes enem_running_text {
+     0%   { -webkit-transform: translateX(100%); }
+     100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes enem_running_text {
+     0%   { 
+     -moz-transform: translateX(100%); /* Firefox bug fix */
+     -webkit-transform: translateX(100%); /* Firefox bug fix */
+     transform: translateX(100%);       
+     }
+     100% { 
+     -moz-transform: translateX(-100%); /* Firefox bug fix */
+     -webkit-transform: translateX(-100%); /* Firefox bug fix */
+     transform: translateX(-100%); 
+     }
+}
+/**********************************************************************************/
+
+/********************************* FOR ANIMATE MUTER CLOSE OPEN *******************/
+@-moz-keyframes muter_close {
+    0% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+    100% {
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+}
+
+@-webkit-keyframes muter_close {
+    0% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+    100% {
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+}
+
+@keyframes muter_close {
+    0% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+    100% {
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+}
+
+@-moz-keyframes muter_open {
+    0% {
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    99% {
+        -moz-transform: rotate(359deg);
+        transform: rotate(359deg);
+      }
+    100% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+}
+
+@-webkit-keyframes muter_open {
+    0% {
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    99% {
+        -moz-transform: rotate(359deg);
+        transform: rotate(359deg);
+      }
+    100% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+}
+
+@keyframes muter_open {
+    0% {
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    99% {
+        -moz-transform: rotate(359deg);
+        transform: rotate(359deg);
+      }
+    100% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+}
+/*****************************************************************************/
+
+/********************************* FOR ANIMATE BLINK *****************/
+@-moz-keyframes blink_white_text {
+    0% {
+        color: transparent;
+      }
+    100% {
+        color: white;
+      }
+}
+
+@-webkit-keyframes blink_white_text {
+    0% {
+        color: transparent;
+      }
+    100% {
+        color: white;
+      }
+}
+
+@keyframes blink_white_text {
+    0% {
+        color: transparent;
+      }
+    100% {
+        color: white;
+      }
+}
+/*********************************************************************/
+
+/********************************* FOR ANIMATE GOYANG ***************/
+@-moz-keyframes goyang {
+  from, 100% {
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -moz-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -moz-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@-webkit-keyframes goyang {
+  from, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes goyang {
+  from, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+/*******************************************************************/
+
+/********************** FOR ANIMATE LIKE GOOGLE ********************/
+/** Struktur Html **/
+/*
+<h1 class='enem_loading_ex1'>
+	<span>G</span>
+	<span>o</span>
+	<span>o</span>
+	<span>g</span>
+	<span>l</span>
+	<span>e</span>
+</h1>
+<span class="enem_container_circle_loading">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</span>*/
+/*************************/
+//$bluego: #4285F4;
+//$redgo:  #DB4437;
+//$yellowgo: #F4B400;
+//$greengo: #0F9D58;
+$bluego: #006AAE;
+$redgo:  #ED1C24;
+$yellowgo: #F7941E;
+$greengo: #8DD84A;
+$font: 'Montserrat', sans-serif;
+
+h1.enem_loading_ex1 {
+    font-family: $font;
+	font-size: 4em;
+	text-align: center;
+	letter-spacing: -10px;
+	font-weight: lighter;
+}
+h1.enem_loading_ex1 span {
+    &:first-child {
+//        color: $bluego;
+        color: tomato;
+    }
+    &:nth-child(2) {
+//        color: $redgo;
+        color: tomato;
+    }
+    &:nth-child(3) {
+//        color: $yellowgo;
+        color: tomato;
+    }
+    &:nth-child(4) {
+//        color: $blue;
+        color: #4285F4;
+    }
+    &:nth-child(5) {
+//        color: $greengo;
+        color: #F7941E;
+    }
+    &:nth-child(6) {
+//        color: $red;
+        color: teal;
+        -ms-transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg); 
+        transform: rotate(-20deg);
+        display: inline-block;
+    }
+}
+
+.enem_container_circle_loading {
+    display:block;
+	width: 122px;
+	margin: 100px auto;
+}
+
+.enem_container_circle_loading div {
+    height: 20px;
+	width: 20px;
+	position: absolute;
+	border-radius: 50%;
+	background: black;
+	display: inline-block;
+//    &:first-child {
+//        animation: move 1s ease-in-out infinite alternate;
+//		background: $bluego;
+//		margin-left: 0;
+//    }
+//    &:nth-child(2) {
+//        animation: move 1s ease-in-out -.25s infinite alternate;
+//		margin-left: 35px;
+//		background: $redgo;
+//    }
+//    &:nth-child(3) {
+//        animation: move 1s ease-in-out -.5s infinite alternate;
+//		margin-left: 70px;
+//		background: $yellowgo;
+//    }
+//    &:nth-child(4) {
+//        animation: move 1s ease-in-out -.75s infinite alternate;
+//		margin-left: 105px;
+//		background: $greengo;
+//    }
+    &:first-child {
+        animation: move 1s ease-in-out infinite alternate;
+		background: tomato;
+		margin-left: 0;
+    }
+    &:nth-child(2) {
+        animation: move 1s ease-in-out -.25s infinite alternate;
+		margin-left: 35px;
+		background: $bluego;
+    }
+    &:nth-child(3) {
+        animation: move 1s ease-in-out -.5s infinite alternate;
+		margin-left: 70px;
+		background: #F7941E;
+    }
+    &:nth-child(4) {
+        animation: move 1s ease-in-out -.75s infinite alternate;
+		margin-left: 105px;
+		background: teal;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+/*******************************************************************/
