@@ -13,6 +13,11 @@ user_guide_src/cilexer/build/*
 user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
 /vendor/
+/node_modules/
+/bower/
+themes/enem_apps/media/vendor/
+themes/enem_apps/media/node_modules/
+themes/enem_apps/media/bower/
 
 # IDE Files
 #-------------------------

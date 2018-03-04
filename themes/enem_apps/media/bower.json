@@ -1,0 +1,38 @@
+{
+  "name": "enem",
+  "authors": [
+    "enem"
+  ],
+  "description": "Hello guys, Enem package created by Nurfirliana Muzanella at 21/July/2016",
+  "main": "Gruntfile.js",
+  "keywords": [
+    "enem"
+  ],
+  "license": "MIT",
+  "homepage": "https://www.muzanella.com/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "bootstrap-sass": "^3.3.6",
+    "fancybox": "^2.1.5",
+    "font-awesome": "fontawesome#^4.6.3",
+    "vex": "^2.3.4",
+    "Waves": "waves#^0.7.5",
+    "yepnope": "^2.0.0",
+    "Swiper": "swiper#^3.3.1",
+    "jquery.nicescroll": "nicescroll#^3.6.8",
+    "morris.js": "morrisjs#^0.5.1",
+    "watch": "darcyclarke/watch.js#^2.0.4",
+    "ckeditor-dev": "^4.5.10",
+    "sizzle": "^2.3.0",
+    "tinymce": "tinymce-dist#^4.4.1",
+    "animate.css": "animate-css#^3.5.2",
+    "fullpage.js": "^2.8.6"
+  }
+}
